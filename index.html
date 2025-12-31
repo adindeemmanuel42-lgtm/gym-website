@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mofit Fitness Gym</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Monstserrat:wght@900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        h1{
+  font-family: 'Monstserrat', sans-serif;
+   font-weight:900;
+   font-size: 4rem;
+   text-transform: uppercase;
+   letter-spacing: -2px;
+   margin-bottom: 20px;
+   line-height: 1.1;
+        }
+ nav {
+   background-color:#0A0A0A;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px 5px rgba(255,255,0,0.5);
+    height:70px;
+    border-bottom: 1px solid #1a1a1a;
+ }
+   nav ul {
+    list-style-type: none;
+    margin: 0;
+   gap: 10px;
+    padding: 10px;
+     display:flex;
+     align-content: center;
+     justify-content: center;
+     justify-content: space-evenly;
+     font-weight: 500;
+   }
+   .button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: #CCFF00;
+    border-radius:4px;
+    transition: background-color 0.3s, transform 0.3s;
+   }
+    .button:hover {
+        background-color: #888888;
+        transform:translateY(-2px);
+    }
+    body {
+        background-color:#121212;
+        font-family: Inter, sans-serif;
+    color: #ffffff;
+    }
+    .highlight{
+        color: #CCFF00;
+        font-weight: 600;
+    }
+    .heropreview{
+     justify-content:center;
+        text-align: center;
+    }
+    .herosection{
+        display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 40px;
+        align-items: start;
+     background-color: #f4f4f4 ;
+     border: 1px solid #CCFF00;
+      padding: 20px;
+    }
+    .herotext{
+        margin-bottom: 30px;
+        justify-content: center;
+        gap:20px;
+        padding: 20px;
+    }
+    .herotext h2{
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color:#121212;
+     
+    }
+   
+    .join-btn{
+        background-color: #000000;
+        color:#ffffff;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+    .join-btn:hover{
+        background-color: #333333;
+    }
+    .slider {   position: relative; width: 100%; overflow: hidden; }
+    .slider  img { width: 100%;  object-fit: cover; display: none; border-radius: 8px; }
+    .slider img.active { display: block; }
+    #hero { padding: 40px; }
+    .gymfeatures  ul{
+          margin:0;
+        gap: 40px;
+        padding: 10px 20px;
+        list-style-type: none;
+        border-radius: 16px;
+        background-color: #000000;
+    }
+    
+    .feature-card{
+      text-align: center;
+      transition: transform 0.3s ;
+      color:#CCFF00;
+
+        }    .emoji-icon{
+    display:inline-block;
+    font-size: 1rem;
+    background:linear-gradient(135deg,#3b82f6,#2dd4bf);
+    padding:15px;
+    border-radius: 50%;
+    margin-right: 30px;
+    
+    margin-bottom: 15px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3);
+
+    }
+    .gymfeatures ul:hover{
+      transform: translateY(-10px);
+      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.5);
+     color: #0077b6;
+    }
+     .services-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+  max-width:1100px;
+  margin:40px auto;
+}
+
+.service-card{
+  background:#1a1a1a;
+  border:1px solid #CCFF00;
+  padding:30px;
+  border-radius:16px;
+  text-align:center;
+  transition:0.3s ease;
+}
+
+.service-card i{
+  font-size:3rem;
+  color:#CCFF00;
+  margin-bottom:15px;
+}
+
+.service-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 30px rgba(0,0,0,0.6);
+}
+.plans-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap:30px;
+  max-width:1100px;
+  margin:0 auto;
+}
+
+.plan-card{
+  background:#1a1a1a;
+  border:1px solid rgba(255,255,255,0.1);
+  padding:40px 25px;
+  border-radius:16px;
+  text-align:center;
+  transition:0.3s ease;
+}
+
+.plan-card h3{
+  margin-bottom:10px;
+  color:#CCFF00;
+}
+
+.plan-card .price{
+  font-size:1.6rem;
+  font-weight:600;
+  margin-bottom:20px;
+}
+
+.plan-card ul{
+  list-style:none;
+  padding:0;
+  margin-bottom:30px;
+}
+
+.plan-card ul li{
+  margin-bottom:10px;
+}
+
+.plan-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 30px rgba(0,0,0,0.6);
+}
+
+
+.plan-card.featured{
+  border:2px solid #CCFF00;
+  transform:scale(1.05);
+}
+
+    .join-btn:hover { background: #023e8a; /* Darker blue on hover */ }
+    </style>
+</head>
+<body>
+    <header>
+     <nav>
+      <ul>
+      <li><a href="#home"  class="button">Home</a></li>
+     <li><a href="#services" class="button">Services</a></li>
+      <li><a href="#contact" class="button">Contact</a></li>
+      <li><a href="#membership" class="button">membership plans</a></li>
+      </ul>
+     </nav>
+    </header>
+    <main>
+        <section id="home">
+        <h1>Welcome to Mofit Fitness Gym</h1>
+        <p>Your journey to a healthier life starts here!
+         We provide the elite equipment and expert trainers to help you achieve your fitness goals.   
+        </p>
+        </section>
+       <section id="hero">
+        <div class="heropreview">
+      <h2> Your Body ,<br> Our <span class="highlight">Motif.</span></h2>
+        <p>Join us today and transform your life!</p>
+        </div>
+        <div class="herosection">
+         <div class="slider">
+        <img src="gym 1.jpg" alt="Gym Image 1" >
+        <img src="gym 2.jpg" alt="Gym Image 2">
+        <img src="gym 3.jpg" alt="Gym Image 3" >
+        <img src="gym 4.jpg" alt="Gym Image 4" >
+          <img src="gym 5.jpg" alt="Gym Image 5" >
+         </div>
+         <div class="herotext">
+            <h2>Why Choose<span class="highlight" >Mofit Fitness Gym?</span></h2>
+            <div class="gymfeatures">
+           
+            <ul>
+               <div class="feature-card"> 
+                <li>State-of-the-art equipment </li>
+               <li> Certified personal trainers</li>
+                <li> Flexible membership plans</li>
+          
+                <li> Group fitness classes</li>
+                <li> Nutrition and wellness coaching</li>
+            </ul>
+         </div>
+          
+               <p><a href="#membership" class="join-btn">Join Now</a> or <a href="#contact" class="join-btn">Contact us</a></p>
+
+
+
+        </div>
+       </section>
+ <section id="services"style="padding:60px20px;">
+<h2 style="text-align:center;">Take a look at the services we offer</h2>
+<div class="services-grid">
+<div class="service-card">
+<i class="fa-solid fa-dumbbell"></i>
+<h3>Strength Training</h3>
+<p>Build muscle and increase strength
+with guided workouts.</p>
+</div>
+<div class="service-card">
+<i class="fa-solid fa-heart-pulse"></i>
+<h3>Cardio Training</h3>
+<p>Improve endurance with
+high-energy cardio sessions.</p>
+</div>
+<div class="service-card"><i
+class="fa-solid
+fa-person-praying"></i>
+<h3>Yoga</h3>
+<p>Relax, stretch, and improve
+flexibility.</p>
+</div>
+<div class="service-card"><i
+class="fa-solid
+fa-person-running"></i>
+<h3>Aerobics</h3>
+<p>Fun group workouts that burn
+calories fast.</p>
+</div>
+</div>
+</section>
+<section id="membership" style=" padding: 70px 20px;">
+ <h2 style="text-align: center; "> Membership plans</h2>
+ <p style="text-align:center; margin-bottom: 50px; color:#CCFF00; ">Choose a plan that fits your fitness goals.</p>
+    <div class="plans-grid">
+   <div class="plan-card">
+   <h3>Basic </h3>
+  <p class="price">#15,000 / month</p>
+  <ul>
+ <li>Gym Access</li>
+ <li>Basic Equipment</li>
+<li> Locker Room</li>
+  </ul>
+  <a href="#contact" class="join-btn">Get started</a>
+   </div>
+<div class="plan-card">
+  <h3>Standard</h3>
+ <p class="price">#25,000 / month</p>
+ <ul>
+  <li> Full gym access</li>
+  <li>Cardio & Strength Training</li>
+  <li>Group Classes</li>
+  <li>Free Fitness Assessment</li>
+  </ul>
+  <a href="#contact" class="join-btn">Get started</a></div>
+  <div class="plan-card">
+  <h3>Premium</h3>
+   <p class="price">#40,000 / month</p>
+ <ul>
+ <li>Unlimited Gym Access</li>
+ <li>Personal Trainer</li>
+ <li>Nutrition Guidance</li>
+<li>Yoga & Aerobics Classes</li>
+ </ul>
+  <a href="#contact" class="join-btn">Get started</a>
+</div>
+
+    </div>
+</section>
+
+
+    </main>
+    <script>
+  let currentIndex = 0;
+  const images = document.querySelectorAll('.slider img');
+
+  function showImage(index) {
+    images.forEach(img => img.classList.remove('active'));
+    images[index].classList.add('active');
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  }
+
+  showImage(currentIndex);
+  setInterval(nextImage, 3000);
+</script>
+
+    <footer style="background:#0A0A0A;padding:40px 20px;text-align:center;">
+  <h3>Mofit Fitness Gym</h3>
+  <p>Train Hard. Stay Strong. Live Healthy.</p>
+
+  <p>Email: contact@mofitgym.com | Phone: +234 xxx xxx xxxx</p>
+
+  <p>&copy; 2024 Mofit Fitness Gym</p>
+</footer>
+
+
+    </body>
+</html>
