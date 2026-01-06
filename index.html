@@ -112,6 +112,8 @@
         list-style-type: none;
         border-radius: 16px;
         background-color: #000000;
+        font-size: 1.5rem;
+        font-weight: 800;
     }
     
     .feature-card{
@@ -211,6 +213,13 @@
   border:2px solid #CCFF00;
   transform:scale(1.05);
 }
+.mofit {
+display: flex;
+gap:20px;
+padding :20px;
+justify-content: center;}
+
+
 .menu-toggle { display: none; font-size: 28px; cursor: pointer; color: #FF5722; }
 
     .join-btn:hover { background: #023e8a; /* Darker blue on hover */ }
@@ -228,7 +237,7 @@
       
       }
       .slider img{
-        width: 100%;  max-width: 350px; height: auto; margin-top: 20px;
+        width: 100%;  max-width: 350px;  margin-top: 20px;
       }
       .menu-toggle {
     display: block; /* Show hamburger */
@@ -291,12 +300,12 @@
            
             <ul>
                <div class="feature-card"> 
-                <li>State-of-the-art equipment </li>
-               <li> Certified personal trainers</li>
-                <li> Flexible membership plans</li>
+                <li>State-of-the-art equipment .</li>
+               <li> Certified personal trainers.</li>
+                <li> Flexible membership plans.</li>
           
-                <li> Group fitness classes</li>
-                <li> Nutrition and wellness coaching</li>
+                <li> Group fitness classes.</li>
+                <li> Nutrition and wellness coaching.</li>
             </ul>
          </div>
           
@@ -405,17 +414,23 @@ calories fast.</p>
   setInterval(nextImage, 3000);
 </script>
 
-    <footer style="background:#0A0A0A;padding:40px 20px;text-align:center;">
-  <h3>Mofit Fitness Gym</h3>
+    <footer style="background:#0A0A0A;padding:40px 20px;text-align:center;" id="contact">
+     <div class="mofit">
+      <div class="mofitcard"><h3>Mofit Fitness Gym</h3>
   <p>Train Hard. Stay Strong. Live Healthy.</p>
 
   <p>Email: contact@mofitgym.com | Phone: +234 xxx xxx xxxx</p>
 
-  <p>&copy; 2024 Mofit Fitness Gym</p>
+  <p>&copy; 2024 Mofit Fitness Gym</p></div>
+    <div class="working-hours">
+   <h4>Working Hours</h4>
+<ul> <li>Monday – Friday: 6:30 AM – 8:00 PM</li> <li>Saturday: 6:30 AM – 9:00 PM</li> <li>Sunday: Closed</li> </ul>
+    </div>
+ </div> 
+  <div class="social-icons"> <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a> <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> </div>
+
 </footer>
 
 
     </body>
 </html>
-
-
