@@ -74,13 +74,13 @@
         align-items: start;
      background-color: #f4f4f4 ;
      border: 1px solid #CCFF00;
-      padding: 20px;
+      padding: 50px;
     }
     .herotext{
         margin-bottom: 30px;
         justify-content: center;
         gap:20px;
-        padding: 40px;
+        padding: 20px;
     }
     .herotext h2{
       font-size: 3rem;
@@ -213,28 +213,26 @@
   border:2px solid #CCFF00;
   transform:scale(1.05);
 }
+.working-hours h4{
+  border-bottom: 2px solid blue;
+  display: inline-block;
+  padding-bottom: 5px;
+}
 .mofit {
 display: flex;
 gap:20px;
 padding :20px;
 justify-content: center;}
-
+ .mofit h3{
+  border-bottom: 2px solid blue;
+  display: inline-block;
+  padding-bottom: 5px;
+ }
 
 .menu-toggle { display: none; font-size: 28px; cursor: pointer; color: #FF5722; }
 
     .join-btn:hover { background: #023e8a; /* Darker blue on hover */ }
-   
-
-  .navbutton {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 12px;
-    background-color: #6366f1;
-    color: white;
-    border-radius: 6px;
-  }
-@media (max-width: 768px) {
+    @media (max-width: 768px) {
 
   #hero {
     padding: 20px 15px;
@@ -304,8 +302,19 @@ justify-content: center;}
     color: white;
     border-radius: 6px;
   }
+ .mofit{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  justify-content: center;
+ }
+ .working-hours ul {
+  list-style-type: none;
+  
+ }
+}
 
-    }
+   
     </style>
 </head>
 <body>
@@ -480,5 +489,3 @@ calories fast.</p>
 
     </body>
 </html>
-
-
