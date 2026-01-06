@@ -223,23 +223,69 @@ justify-content: center;}
 .menu-toggle { display: none; font-size: 28px; cursor: pointer; color: #FF5722; }
 
     .join-btn:hover { background: #023e8a; /* Darker blue on hover */ }
-    @media (max-width:768px){
-      .herosection{
-        display:flex;
-        align-items: center;
-        text-align: center;
-        padding :40px 60px;
-        flex-direction: column;
-        gap:20px;
-      }
-      .herosection h1{
-      font-size: 28px;  line-height: 1.3;
-      
-      }
-      .slider img{
-        width: 100%;  max-width: 500px;  margin-top: 20px;
-      }
-      .menu-toggle {
+   
+
+  .navbutton {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    background-color: #6366f1;
+    color: white;
+    border-radius: 6px;
+  }
+@media (max-width: 768px) {
+
+  #hero {
+    padding: 20px 15px;
+  }
+
+  .heropreview h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+
+  .heropreview p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .herosection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px 15px; /* ✅ reduced padding */
+  }
+
+  .slider img {
+    width: 100%;
+    max-height: 260px; /* ✅ gives image breathing room */
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .herotext {
+    padding: 0;
+  }
+
+  .herotext h2 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+
+  .gymfeatures ul {
+    font-size: 1.1rem;
+    padding: 20px;
+  }
+
+  .join-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+  }
+        .menu-toggle {
     display: block; /* Show hamburger */
   }
 
@@ -434,4 +480,5 @@ calories fast.</p>
 
     </body>
 </html>
+
 
